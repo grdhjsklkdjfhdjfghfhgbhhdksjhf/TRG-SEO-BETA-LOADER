@@ -5,7 +5,7 @@ local Net = script.Parent.Parent.Parent.Network
 local Parcel = require(9428572121)
 local Scan = script.Parent["Scan Handeler"]
 local Tri = script.Parent["TRG-Tri"].TriLight
-local STri = script.Parent.Scanner.InnerLight
+local STri = script.Parent.Scanner.Light
 if Parcel:Whitelist("64057c1e93b2a5cbfc524ec5", "k5d86kl4psw6t6j2d4snkrhf657r") then
 	Tri.Transparency = 0.2
 	Tri.Material = Enum.Material.Neon
