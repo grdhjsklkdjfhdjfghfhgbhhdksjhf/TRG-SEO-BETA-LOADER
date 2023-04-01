@@ -6,6 +6,8 @@ local Parcel = require(9428572121)
 local Scan = script.Parent["Scan Handeler"]
 local Tri = script.Parent["TRG-Tri"].TriLight
 local STri = script.Parent.Scanner.Light
+local Cscreen = script.Parent["Reader V2"].Screen.SurfaceGui
+local Mstr = require(script.Parent.Parent.Parent.Settings.MasterConfig)
 if Parcel:Whitelist("64057c1e93b2a5cbfc524ec5", "k5d86kl4psw6t6j2d4snkrhf657r") then
 	Tri.Transparency = 0.2
 	Tri.Material = Enum.Material.Neon
@@ -61,7 +63,23 @@ if Parcel:Whitelist("64057c1e93b2a5cbfc524ec5", "k5d86kl4psw6t6j2d4snkrhf657r") 
 
 
 
+	
+
+	
+	
+	
+	
 else
+	local Cscreen = script.Parent["Reader V2"].Screen.SurfaceGui
 	warn("TRG | User Or Group not whitelisted for product: Self Checkout System")	
 	Screen.Boot.LCS_Inv.Visible = true
+	Cscreen.lcs_inv.Visible = true
+	if Mstr.trionlcz then
+		Tri.Transparency = 0.2
+		Tri.Material = Enum.Material.Neon
+		Tri.Color = Color3.fromRGB(255, 0, 0)
+		STri.Transparency = 0.2
+		STri.Material = Enum.Material.Neon
+		STri.Color = Color3.fromRGB(255, 0, 0)
+	end
 end
