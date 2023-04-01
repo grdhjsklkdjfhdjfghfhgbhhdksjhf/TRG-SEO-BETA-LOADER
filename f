@@ -62,6 +62,9 @@ if Parcel:Whitelist("64057c1e93b2a5cbfc524ec5", "k5d86kl4psw6t6j2d4snkrhf657r") 
 	
 	
 else
+	Screen.Boot.Visible = true
+	Screen.Application.Visible = false
+	Screen.LaneConnection.Visible = false
 	warn("TRG | User Or Group not whitelisted for product: Self Checkout System")	
 	Screen.Boot.LCS_Inv.Visible = true
 end
